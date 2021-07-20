@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" href="css/styles.css" rel="stylesheet" />
-    <title>WST 166 Assignment 1 _ Stories</title>
+    <title>Document</title>
   </head>
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
       <h1>Short Stories</h1>
       <nav>
@@ -18,20 +17,19 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="storyNav">
-        <ul id="storyLinks"></ul>
-      </section>
-
-      <form id="newBooksForm"></form>
-
-      <section class="stories" id="stories"></section>
-    </main>
-
+    <form id="newBook">
+      <input type="text" id="title" placeholder="Title" />
+      <input type="text" id="author" placeholder="Author" />
+      <input type="text" id="publisher" placeholder="Publisher" />
+      <input type="text" id="publishDate" placeholder="Publish Date" />
+      <textarea id="text" placeholder="Text"></textarea>
+      <input type="submit" />
+    </form>
     <footer>
       <p>&copy;2021 LAPC Short Stories</p>
     </footer>
-    <script src="js/getBooks.js"></script>
+
     <script src="js/scrollToTop.js"></script>
+    <script src="js/addBooks.js"></script>
   </body>
 </html>

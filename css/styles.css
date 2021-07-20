@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import 'variables.css';
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-   background-color: var(--light2);
-   color: var(--primary);
-   font-family: 'Quattrocento'; 
+  background-color: var(--light2);
+  color: var(--primary);
+  font-family: 'Quattrocento';
 }
 
 #myBtn {
@@ -40,12 +40,12 @@ h3,
 h4,
 h5,
 h6 {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 header {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* unvisited link */
@@ -64,32 +64,33 @@ a:hover {
 }
 
 main {
-    width: 700px;
-    margin: auto;
-    min-height: calc(100vh - 100px);
-    background-color: var(--primary);
-    color: var(--light);
+  width: 700px;
+  margin: auto;
+  min-height: calc(100vh - 100px);
+  background-color: var(--primary);
+  color: var(--light);
 }
 .stories {
-    padding: 20px;
-  }
-  .storyContainer {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .storyNav {
-    padding: 20px;
-  }
-  .storyNav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-  }
-  p {
-    line-height: 1.5em;
-    padding: 20px;
-  }
-  
+  padding: 20px;
+}
+.storyContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.storyNav {
+  padding: 20px;
+  background-color: white;
+}
+.storyNav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+p {
+  line-height: 1.5em;
+  padding: 20px;
+}
+
 footer {
-    text-align: center;
+  text-align: center;
 }
