@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Quattrocento:wght@400;700&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import 'variable.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light2);
+  color: var(--primary);
+  font-family: 'Quattrocento';
+}
+
+.num1 {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--dark1); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.num1:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  padding-top: 40px;
+}
+
+h4 {
+  padding-bottom: 30px;
+}
+
+header {
+  padding: 20px;
+}
+
+.num2 {
+  z-index: 99;
+  position: fixed; /* Fixed/sticky position */
+  top: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--dark2); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: var(--light3);
+}
+
+/* visited link */
+a:visited {
+  color: var(--dark1);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--light);
+}
+
+main {
+  width: 700px;
+  margin: auto;
+  min-height: calc(100vh - 100px);
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+/*
+.storyContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+*/ 
+.aniNav {
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+} 
+
+.aniNav ul {
+  /* display: flex; */
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+}
+
+.animations {
+  padding: 50px;
+}
+
+p {
+  line-height: 1.5em;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding:20px;
+}
+
+@media (max-width: 600px) {
+  main, .aniNav {
+    width: 100%;
+    height: auto;
+  }
+}

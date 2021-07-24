@@ -1,0 +1,39 @@
+nav {
+  float:left;
+  width: 25%;
+  height: 300px;
+  text-align: center;
+  min-height: calc(100vh - 300px);
+  min-width: calc(25hw - 100px);
+}
+nav ul {
+  list-style-type: none;
+  padding:0;
+}
+section {
+  float: left;
+  padding:50px;
+  width:75%;
+  height: 300px;
+  min-height: calc(100vh - 300px);
+  min-width: calc(75hw - 100px);
+}
+/*Clear float after the columns*/
+section::after {
+  content:"";
+  display:table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, section {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-height: 300px) {
+  nav, section {
+    width: 100%;
+    height: auto;
+  }
+}
+
