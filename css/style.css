@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Quattrocento:wght@400;700&family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-@import 'variables.css';
+@import 'variable.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +15,7 @@ body {
   font-family: 'Quattrocento';
 }
 
-#myBtn {
-  display: none; /* Hidden by default */
+.num1 {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
@@ -30,7 +30,7 @@ body {
   font-size: 18px; /* Increase font size */
 }
 
-#myBtn:hover {
+.num1:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
@@ -44,8 +44,32 @@ h6 {
   padding: 10px;
 }
 
+h2 {
+  padding-top: 40px;
+}
+
+h4 {
+  padding-bottom: 30px;
+}
+
 header {
   padding: 20px;
+}
+
+.num2 {
+  z-index: 99;
+  position: fixed; /* Fixed/sticky position */
+  top: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--dark2); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  text-align: left;
 }
 
 /* unvisited link */
@@ -70,22 +94,32 @@ main {
   background-color: var(--primary);
   color: var(--light);
 }
-.stories {
-  padding: 20px;
-}
+
+/*
 .storyContainer {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.storyNav {
+*/ 
+.aniNav {
+  width: 700px;
+  margin: auto;
   padding: 20px;
   background-color: white;
-}
-.storyNav ul {
-  display: flex;
+} 
+
+.aniNav ul {
+  /* display: flex; */
   list-style-type: none;
-  justify-content: space-evenly;
+  text-align: center;
+  margin: auto;
+  padding: 40px;
 }
+
+.animations {
+  padding: 50px;
+}
+
 p {
   line-height: 1.5em;
   padding: 20px;
@@ -93,4 +127,12 @@ p {
 
 footer {
   text-align: center;
+  padding:20px;
+}
+
+@media (max-width: 600px) {
+  main, .aniNav {
+    width: 100%;
+    height: auto;
+  }
 }

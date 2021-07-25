@@ -4,34 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" href="css/styles.css" rel="stylesheet" />
-    <title>WST 166 Assignment 1 _ Stories</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <title>WST 166 Assignment 1 _ Animations</title>
   </head>
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <header>
-      <h1>Short Stories</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Stories</a></li>
-          <li><a href="addBooks.html">Add Story</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header><h1>Animations</h1></header> 
+    
+    <button class="num1" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+       
+    <button class="num2" onscroll="scrollFunction()" id="abc">
+      <li><a href="index.html">Animations</a></li>
+      <li><a href="addAnimations.html">Add Animations</a></li>
+    </button>
+
     <main>
-      <section class="storyNav">
-        <ul id="storyLinks"></ul>
+      <section class="aniNav">
+        <ul id="aniLinks"></ul>
       </section>
 
-      <form id="newBooksForm"></form>
+      <form id="newAniForm"></form>
 
-      <section class="stories" id="stories"></section>
+      <section class="animations" id="animations"></section>
     </main>
 
     <footer>
-      <p>&copy;2021 LAPC Short Stories</p>
+      <p>&copy;2021 LAPC Animations</p>
     </footer>
-    <script src="js/getBooks.js"></script>
+    
+    <script src="js/getAnimations.js"></script>
     <script src="js/scrollToTop.js"></script>
   </body>
-</html>
