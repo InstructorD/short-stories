@@ -22,7 +22,7 @@ signupForm.addEventListener('submit', (e) => {
       return res.json();
     })
     .then((data) => {
-      alert('Thank you for signing up ' + data.email);
+      alert('Thank you for signing up. ' + data.email);
     })
     .catch((err) => console.log(err));
 });

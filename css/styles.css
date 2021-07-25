@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Quattrocento:wght@400;700&family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import 'variables.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,29 +10,28 @@
 }
 
 body {
-  background-color: var(--light2);
+  background-color: var(--a1);
   color: var(--primary);
   font-family: 'Quattrocento';
 }
 
-#myBtn {
-  display: none; /* Hidden by default */
+.num1 {
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 40px; 
+  right: 60px;
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--dark1); /* Set a background color */
-  color: white; /* Text color */
+  border: none; 
+  outline: none;
+  background-color: var(--dark1); 
+  color: white; 
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 15px; 
   border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 18px; 
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+.num1:hover {
+  background-color: var(--b3); 
 }
 
 h1,
@@ -44,48 +44,80 @@ h6 {
   padding: 10px;
 }
 
+h2 {
+  padding-top: 40px;
+}
+
+h4 {
+  padding-bottom: 30px;
+}
+
 header {
   padding: 20px;
 }
 
-/* unvisited link */
-a:link {
-  color: var(--light3);
+.num2 {
+  z-index: 99;
+  position: fixed; 
+  top: 40px; 
+  left: 60px; 
+  border: none; 
+  outline: none;
+  background-color: var(--b4); 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px; 
+  font-size: 18px; 
+  text-align: left;
 }
 
-/* visited link */
+/* unvisited link */
+a:link {
+  color: var(--b4);
+}
+
 a:visited {
   color: var(--dark1);
 }
 
-/* mouse over link */
 a:hover {
-  color: var(--light);
+  color: var(--b3);
+}
+
+.storyNav {
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  font-family: 'Acme';
+}
+.storyNav ul {
+  /* display: flex; */
+  list-style-type: none;
+  /* justify-content: space-evenly; */
+  text-align: center;
+  margin: auto;
+  padding: 40px;
 }
 
 main {
   width: 700px;
   margin: auto;
   min-height: calc(100vh - 100px);
-  background-color: var(--primary);
+  background-color: var(--a9);
   color: var(--light);
 }
+
 .stories {
   padding: 20px;
 }
+
 .storyContainer {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.storyNav {
-  padding: 20px;
-  background-color: white;
-}
-.storyNav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-evenly;
-}
+
 p {
   line-height: 1.5em;
   padding: 20px;
@@ -93,4 +125,12 @@ p {
 
 footer {
   text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  main, .storyNav {
+    width: 100%;
+    height: auto;
+  }
 }
